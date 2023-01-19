@@ -6,10 +6,13 @@ body {
   background-color: #09090a;
 }
 
-#menu-habits {
+#container-conteudo {
   width: 100vw;
   padding: 10vh 10vw;
   box-sizing: border-box;
+}
+
+#menu-habits {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,3 +31,50 @@ body {
   font-size: 16px;
 }
 
+#container-central {
+  display: flex;
+  margin-top: 40px;
+}
+
+#container-emojis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  margin-right: 15px;
+  flex-direction: column;
+}
+
+.emoji {
+  font-size: 32px;
+  width: 40px;
+  height: 64px;
+  line-height: 64px;
+}
+
+#container-habitos {
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-between;
+}
+
+.formulario-checkboxes {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.habito-checkbox {
+  border: 2px solid #27272a;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  width: 64px;
+  height: 64px;
+  background: #18181b;
+  box-sizing: border-box;
+}
+
+.habito-checkbox:checked {
+  background: #8b5cf6;
+}
